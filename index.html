@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Shop trendy T-shirts, jackets, and accessories at TrendyStore. High quality, affordable prices.">
+
+  <title>TrendyStore - Best Deals Online</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css"/>
+ 
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm fixed-top">
+    <div class="container">
+  <a class="navbar-brand fw-bold text-primary" href="#home">TrendyStore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-primary nav-cart position-relative" href="#" aria-label="View cart">
+              <!-- cart icon (inline SVG) -->
+              <svg class="nav-cart-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 5H14.5a.5.5 0 0 1 .49.598l-1.5 6A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.49-.402L1.61 2H.5a.5.5 0 0 1-.5-.5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+              </svg>
+              <span class="ms-1">Cart</span>
+              <span id="cart-count" class="badge bg-primary"></span>
+            </a>
+          </li>
+          <button id="theme-toggle">🌙</button>
+
+          <!-- Theme toggle removed -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section id="home" class="hero text-center py-5 mt-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Welcome to TrendyStore</h1>
+      <p class="lead">Shop the latest trends at unbeatable prices!</p>
+      <a href="#" class="btn btn-primary btn-lg">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Product Cards -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Featured Products</h2>
+      <div id="products"></div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/earphones.jpg" class="card-img-top" alt="Product 1">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Stylish Earphones</h5>
+              <p class="card-text text-muted">Hear the Beat. Feel the Style.</p>
+              <p class="price fw-bold text-primary">₹499</p>
+              <button class="btn btn-outline-primary mt-auto add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/tshirt.jpg" class="card-img-top" alt="Product 2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Trendy T-Shirt </h5>
+              <p class="card-text text-muted">Everyday Comfort. Unmatched Style.</p>
+              <p class="price fw-bold text-primary">₹299</p>
+              <button class="btn btn-outline-primary mt-auto add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/smartwatch.jpg" class="card-img-top" alt="Product 3">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Smart Watch </h5>
+              <p class="card-text text-muted">Smarter Style. Smarter You.</p>
+              <p class="price fw-bold text-primary">₹2,499</p>
+              <button class="btn btn-outline-primary mt-auto add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- About section -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Image -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="img/about.jpeg" alt="About TrendyStore" class="img-fluid rounded-4 shadow">
+      </div>
+      <!-- Text Content -->
+      <div class="col-md-6">
+        <h2 class="mb-3">About TrendyStore</h2>
+        <p>
+          Welcome to <strong>TrendyStore</strong> — your go-to destination for the latest trends and top-quality products. 
+          We bring you curated deals across categories, ensuring style, quality, and value in every purchase.  
+          Our mission is to make online shopping seamless, enjoyable, and tailored to your lifestyle.
+        </p>
+        <p>
+          Discover new arrivals, seasonal collections, and exclusive offers — all at prices you'll love. 
+          TrendyStore is where smart shopping meets fashion-forward choices!
+        </p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- contact section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <p class="text-center mb-5">Have questions? Reach out to us anytime and we’ll get back to you as soon as possible.</p>
+
+    <div class="row justify-content-center">
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-4">
+        <h5>Email</h5>
+        <p>info@trendystore.com</p>
+        <h5>Phone</h5>
+        <p>+7755027538</p>
+        <h5>Address</h5>
+        <p>1090 Lucknow City, India</p>
+      </div>
+      <!-- Contact Form -->
+      <div class="col-md-6">
+        <form id="contact-form">
+          <div class="mb-3">
+            <input id="contact-name" type="text" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input id="contact-email" type="email" class="form-control" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <textarea id="contact-message-text" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark w-100">Send Message</button>
+          <div id="contact-form-message" role="status" aria-live="polite" class="mt-2"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Add this in <head> for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Footer -->
+<footer class="bg-dark text-white pt-4">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Brand -->
+      <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+        <h5 class="fw-bold">TrendyStore</h5>
+        <p class="small mb-0">Your one-stop fashion store.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 text-center mb-3 mb-md-0">
+        <a href="#" class="text-white text-decoration-none mx-2">Home</a>
+        <a href="#" class="text-white text-decoration-none mx-2">Shop</a>
+        <a href="#" class="text-white text-decoration-none mx-2">About</a>
+        <a href="#" class="text-white text-decoration-none mx-2">Contact</a>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="col-md-4 text-center text-md-end">
+        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="text-center border-top border-secondary pt-3 mt-3 small">
+      &copy; 2025 Sani Yadav. All rights reserved.
+    </div>
+  </div>
+</footer>
+  <!-- Bootstrap JS + Custom Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
