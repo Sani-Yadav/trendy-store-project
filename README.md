@@ -24,5 +24,5 @@ An online store for stylish T‑shirts, jackets & accessories with dark mode, SE
 ├── img/
 └── README.md
 
-bash
-Copy code
+
+
